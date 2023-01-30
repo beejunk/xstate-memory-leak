@@ -1,0 +1,20 @@
+{
+  "name": "xstate-memory-leak",
+  "description": "Monorepo to triage XState memory leak issue",
+  "author": "Brian David <beejunk@gmail.com>",
+  "license": "GPL-3.0",
+  "engines": {
+    "node": "<=18.13.0",
+    "npm": "<=9.4.0"
+  },
+  "workspaces": [
+    "packages/app1",
+    "packages/app2"
+  ],
+  "scripts": {
+    "load-test": "k6 run ./scripts/load-test.js"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.3"
+  }
+}
